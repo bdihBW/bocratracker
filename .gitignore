@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+*.local
+*sign-in*.txt
+*password*.txt
+supabase/.temp/
+.DS_Store
+Thumbs.db
