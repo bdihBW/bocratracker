@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-CUSmxudslmCKwQ/1LvnH+6VijoY5O8LrrMqCekxtbuk=' 'sha256-+WEpkYs90nbkKrhAzqJxSbZVT5+ltphHyzuGtb1vWG0=' 'sha256-jjarmjBVGFBhzLGaFkNxSv62UKx9p3N5S88rr7HpCgQ=' 'sha256-lc0xAP+7GrHF1llKJ4eE4XTuPvVwIiXfru+mAM7Ia54=' 'sha256-Pb1x0j+Vauj225NeIzbAt7SPIC3ZMYkCYS/4K99ocPQ=' 'sha256-OerOrD4YYe+cjQms+V801oAsfMlqk8lBw1wC/eL+N3E=' 'sha256-kafOnZj2B74omdxg5TEis72e6Giy+f5kUE3rMz4qgfA=' 'sha256-5D1TheESX6uOIP9iVHePlms67ivN7kD8rQGfIAtpebE=' 'sha256-iRj16yE8xkWL9B9w0oqfsjWCtdGvyjuGS5wJKWysEj0=' 'sha256-UGIagJM9ZK3PhkRmScLOpCkgBO6Nb/vzVIv09xZveiM=' 'sha256-J/jDPOahcY70bZC8Grs2w66XXLst1v8zjw+pLzgdpk4=' 'sha256-fkTFQ5vzkmo8Rphccx3AQxNa5rbMnmL7p+xu28NKKWA=' 'sha256-W0WA+OuwLfpCgnTSg6hn/EN43jug87roPkHAdaMysPM=' 'sha256-Dt1GNoX5JNbKo/yxbNUqLJHHjVyNVhktIPObYNwOlAM=' 'sha256-xIU1cqlhu69J8SuINuOe8t6DOzSct1amEjfXlnfrUVM=' 'sha256-9yG/anvuJ+waoBIw8R30CjWk65qlwbZIt/CKnnASTxI=' 'sha256-dQ4Ei3Mi4xs9ojiQyVVGYVXXP23oIfzxQ5/RjBZkuTY=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' data: blob: https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com; frame-src 'self' blob: https://*.supabase.co https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-CUSmxudslmCKwQ/1LvnH+6VijoY5O8LrrMqCekxtbuk=' 'sha256-+WEpkYs90nbkKrhAzqJxSbZVT5+ltphHyzuGtb1vWG0=' 'sha256-jjarmjBVGFBhzLGaFkNxSv62UKx9p3N5S88rr7HpCgQ=' 'sha256-lc0xAP+7GrHF1llKJ4eE4XTuPvVwIiXfru+mAM7Ia54=' 'sha256-Pb1x0j+Vauj225NeIzbAt7SPIC3ZMYkCYS/4K99ocPQ=' 'sha256-OerOrD4YYe+cjQms+V801oAsfMlqk8lBw1wC/eL+N3E=' 'sha256-kafOnZj2B74omdxg5TEis72e6Giy+f5kUE3rMz4qgfA=' 'sha256-AVh/noYqto05jerXNviCripf0+SSzPFX0oPmpT2EWo0=' 'sha256-iRj16yE8xkWL9B9w0oqfsjWCtdGvyjuGS5wJKWysEj0=' 'sha256-UGIagJM9ZK3PhkRmScLOpCkgBO6Nb/vzVIv09xZveiM=' 'sha256-J/jDPOahcY70bZC8Grs2w66XXLst1v8zjw+pLzgdpk4=' 'sha256-fkTFQ5vzkmo8Rphccx3AQxNa5rbMnmL7p+xu28NKKWA=' 'sha256-W0WA+OuwLfpCgnTSg6hn/EN43jug87roPkHAdaMysPM=' 'sha256-Dt1GNoX5JNbKo/yxbNUqLJHHjVyNVhktIPObYNwOlAM=' 'sha256-xIU1cqlhu69J8SuINuOe8t6DOzSct1amEjfXlnfrUVM=' 'sha256-9yG/anvuJ+waoBIw8R30CjWk65qlwbZIt/CKnnASTxI=' 'sha256-ZfZikrRqIpw8PgrkspvD8CikAEMqzcv2Hfbcrz/B+n0=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' data: blob: https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com; frame-src 'self' blob: https://*.supabase.co https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>BDIH Project Tracker</title>
 <meta name="description" content="Botswana Innovation Hub project tracker for the BOCRA and UASF Trust websites">
@@ -2664,7 +2664,8 @@ VIEWS.admin = (p, q) => {
      ${fld('On track threshold (SPI)', inp('thrOnTrack', s.thrOnTrack, 'number', dis + ' step="0.01" min="0" max="1"'))}
      ${fld('At risk threshold (SPI)', inp('thrAtRisk', s.thrAtRisk, 'number', dis + ' step="0.01" min="0" max="1"'))}
      <h3 class="span2">Name and branding</h3>
-     ${fld('Application name', inp('appName', s.appName || 'Project Tracker', 'text', dis + ' maxlength="60"'))}${fld('Subtitle under the logo', inp('appSubtitle', s.appSubtitle || 'BOCRA, UASF Trust and .BW websites', 'text', dis + ' maxlength="80"'))}
+     <p class="small muted span2">The name and the line under it appear on the sign-in page over the photo, and under the logo in the menu.</p>
+     ${fld('Name on the sign-in page and menu', inp('appName', s.appName || 'Project Tracker', 'text', dis + ' maxlength="60"'))}${fld('Line under the name', inp('appSubtitle', s.appSubtitle || 'BOCRA, UASF Trust and .BW websites', 'text', dis + ' maxlength="80"'))}
      ${fld('Project name on the dashboard', inp('projectName', s.projectName || 'BOCRA, UASF Trust and .BW websites', 'text', dis + ' maxlength="120"'), 'span2')}
      <h3 class="span2">Invoices, escalation and downloads</h3>
      ${fld('VAT rate (%)', inp('vatRate', s.vatRate ?? 14, 'number', dis + ' min="0" max="50" step="0.5"'))}
@@ -6283,6 +6284,9 @@ docTabs = on => _docTabs(on).replace('</nav>', `<a href="#/joint" role="tab" ari
     S.reportDefs = rdefs.map(r => ({ id: r.id, name: r.name, def: r.definition, by: r.created_by, at: r.created_at, shared: r.shared }));
 
     Store.state = S;
+    // The role chosen under "Logged in as" is held by the database, so every tab and check agrees
+    const mine = profiles.find(p => p.id === me.id);
+    Sess.actAs = (mine && mine.acting_role) || null; saveSess();
     const u = S.users.find(x => x.id === me.id);
     S.audit = (Store.prevAudit || []);
     // The audit trail and download log load after the screen is shown, so sign-in is not held up
@@ -6560,6 +6564,9 @@ docTabs = on => _docTabs(on).replace('</nav>', `<a href="#/joint" role="tab" ari
     return act(() => rpc('bocra_decide', { p_review: fd.get('id'), p_outcome: outcome, p_findings: nul(findings) }), outcome === 'Approved' ? 'Approved.' : 'Sent back to the developer.');
   };
 
+  CHG.actAs = el => act(() => rpc('set_acting_role', { p_role: el.value || null }).then(() => { location.hash = '#/'; }),
+    el.value ? 'You are now working as ' + roleName(el.value) + '.' : 'You are now working with all your roles.');
+
   /* ---------- Queries and change control ---------- */
   FORM.queryNew = fd => {
     const subject = String(fd.get('subject') || '').trim(), details = String(fd.get('details') || '').trim();
@@ -6691,6 +6698,8 @@ docTabs = on => _docTabs(on).replace('</nav>', `<a href="#/joint" role="tab" ari
     try {
       const r = await fnCall('login', { username: String(fd.get('username') || '').trim(), password: String(fd.get('password') || ''), turnstile_token: token || null });
       must(await SB.auth.setSession(r.session), 'Session');
+      // Each sign-in starts with all of the person's roles
+      await rpc('set_acting_role', { p_role: null }).catch(() => {});
       await signedIn();
     } catch (e) {
       Ctx.loginMsg = e.message; render();
