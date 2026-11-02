@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-CUSmxudslmCKwQ/1LvnH+6VijoY5O8LrrMqCekxtbuk=' 'sha256-+WEpkYs90nbkKrhAzqJxSbZVT5+ltphHyzuGtb1vWG0=' 'sha256-7NUJarqoVS8YGR9bs5kDlDfErzadmr1wQ8jn2YZEfS0=' 'sha256-lc0xAP+7GrHF1llKJ4eE4XTuPvVwIiXfru+mAM7Ia54=' 'sha256-H7DI3xw7B8qQ5xUa4RSuXxZu1HdYTLi4DSlYfY5N8nQ=' 'sha256-QF2RUdwhkbZFsolcX5Xw+oujXPybhKwfuB2X6j53GwI=' 'sha256-safPW/38kDtNDbYtI1FB+eFP6YDjU7JicBMsQqeqF10=' 'sha256-CAQvQvxFQpHBxG3EBcRF5Q0Ksq0d9jcraBBFelD0FZs=' 'sha256-yDOgO98mUsn3P1ni8fGaAO2tj7pBaxs+/V/GXBvhkV4=' 'sha256-o7PIdFM+qOId+5/kfmjCwFFiOLfmLga82z4G8iBwKfY=' 'sha256-ayQkkWXDOsw05k2DSl8oqEtuKzLCfhpbYRXEmWWnQq8=' 'sha256-kafOnZj2B74omdxg5TEis72e6Giy+f5kUE3rMz4qgfA=' 'sha256-KgknIa+KT98Oxgk2FEv9jRStoNMIghHnAvekWMKo4sQ=' 'sha256-bjoeJl54JQ70KbOZmL2DevLxddSeRqWTghRxJOpAA+8=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' data: blob: https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com; frame-src 'self' blob: https://*.supabase.co https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-CUSmxudslmCKwQ/1LvnH+6VijoY5O8LrrMqCekxtbuk=' 'sha256-+WEpkYs90nbkKrhAzqJxSbZVT5+ltphHyzuGtb1vWG0=' 'sha256-7NUJarqoVS8YGR9bs5kDlDfErzadmr1wQ8jn2YZEfS0=' 'sha256-lc0xAP+7GrHF1llKJ4eE4XTuPvVwIiXfru+mAM7Ia54=' 'sha256-H7DI3xw7B8qQ5xUa4RSuXxZu1HdYTLi4DSlYfY5N8nQ=' 'sha256-QF2RUdwhkbZFsolcX5Xw+oujXPybhKwfuB2X6j53GwI=' 'sha256-WmEZn0ZMScHOwPQxp3cmIc/vBsZzR4nF07rKTp2gfqc=' 'sha256-CAQvQvxFQpHBxG3EBcRF5Q0Ksq0d9jcraBBFelD0FZs=' 'sha256-yDOgO98mUsn3P1ni8fGaAO2tj7pBaxs+/V/GXBvhkV4=' 'sha256-o7PIdFM+qOId+5/kfmjCwFFiOLfmLga82z4G8iBwKfY=' 'sha256-ayQkkWXDOsw05k2DSl8oqEtuKzLCfhpbYRXEmWWnQq8=' 'sha256-kafOnZj2B74omdxg5TEis72e6Giy+f5kUE3rMz4qgfA=' 'sha256-KgknIa+KT98Oxgk2FEv9jRStoNMIghHnAvekWMKo4sQ=' 'sha256-bjoeJl54JQ70KbOZmL2DevLxddSeRqWTghRxJOpAA+8=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' data: blob: https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com; frame-src 'self' blob: https://*.supabase.co https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>BDIH Project Tracker</title>
 <meta name="description" content="Botswana Innovation Hub project tracker for the BOCRA and UASF Trust websites">
@@ -1734,9 +1734,9 @@ function changePwView(forced) {
    ${forced ? '<p>Your account was created with a temporary password. Set your own password to continue.</p>' : ''}
    <form data-form="changePw">
     ${fld('Current password', inp('current', '', 'password', 'required autocomplete="current-password"'))}
-    ${fld('New password', inp('pw1', '', 'password', 'required minlength="12" autocomplete="new-password"'))}
-    ${fld('Confirm new password', inp('pw2', '', 'password', 'required minlength="12" autocomplete="new-password"'))}
-    <p class="small muted">At least 12 characters with at least one letter and one digit.</p>
+    ${fld('New password', inp('pw1', '', 'password', 'required minlength="' + securityCfg().pwMin + '" autocomplete="new-password"'))}
+    ${fld('Confirm new password', inp('pw2', '', 'password', 'required minlength="' + securityCfg().pwMin + '" autocomplete="new-password"'))}
+    <p class="small muted">At least ${securityCfg().pwMin} characters with at least one letter and one digit.</p>
     <button class="btn block">Save password</button>
     ${forced ? '<button type="button" class="btn ghost block" data-act="logout">Sign out</button>' : ''}
    </form></div></div>`;
@@ -2534,7 +2534,7 @@ VIEWS.account = () => {
   const u = realMe();
   return `<h1>My account</h1><div class="grid g2">
   <section class="card"><h2>Profile</h2><dl class="kv"><dt>Name</dt><dd>${esc(u.fullName)}</dd><dt>Username</dt><dd>${esc(u.username)}</dd><dt>Roles</dt><dd>${esc(roleLabel(u))}</dd><dt>Organisation</dt><dd>${esc(orgName(u.org))}</dd><dt>Last successful login</dt><dd>${D.stamp(u.lastLogin) || 'n/a'} (this browser)</dd></dl>
-   <h3>Change password</h3><form data-form="changePw" class="fgrid">${fld('Current password', inp('current', '', 'password', 'required autocomplete="current-password"'))}${fld('New password', inp('pw1', '', 'password', 'required minlength="12" autocomplete="new-password"'))}${fld('Confirm new password', inp('pw2', '', 'password', 'required minlength="12" autocomplete="new-password"'))}<div><button class="btn">Change password</button></div></form>
+   <h3>Change password</h3><form data-form="changePw" class="fgrid">${fld('Current password', inp('current', '', 'password', 'required autocomplete="current-password"'))}${fld('New password', inp('pw1', '', 'password', 'required minlength="' + securityCfg().pwMin + '" autocomplete="new-password"'))}${fld('Confirm new password', inp('pw2', '', 'password', 'required minlength="' + securityCfg().pwMin + '" autocomplete="new-password"'))}<div><button class="btn">Change password</button></div></form>
 </section>
   <section class="card"><h2>Email notifications</h2><form data-form="prefs">${NOTE_CATS.map(c => fld(c, sel(c, ['Immediate', 'Daily digest', 'Off'], (u.prefs || {})[c] || 'Immediate'))).join('')}${fld('Security and account changes', '<input value="Immediate (cannot be turned off)" disabled>')}<button class="btn">Save preferences</button></form></section>
   </div>`;
