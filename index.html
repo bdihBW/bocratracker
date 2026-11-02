@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-CUSmxudslmCKwQ/1LvnH+6VijoY5O8LrrMqCekxtbuk=' 'sha256-+WEpkYs90nbkKrhAzqJxSbZVT5+ltphHyzuGtb1vWG0=' 'sha256-uHcVkEW6GHwDPjKYsfrIy8UEu1fgT9rwKU6PdUSYajI=' 'sha256-lc0xAP+7GrHF1llKJ4eE4XTuPvVwIiXfru+mAM7Ia54=' 'sha256-Pb1x0j+Vauj225NeIzbAt7SPIC3ZMYkCYS/4K99ocPQ=' 'sha256-OerOrD4YYe+cjQms+V801oAsfMlqk8lBw1wC/eL+N3E=' 'sha256-kafOnZj2B74omdxg5TEis72e6Giy+f5kUE3rMz4qgfA=' 'sha256-D9F00C/JE7P55m+Xs06Df3/xnNSEA+lQRdfnKTPDWLw=' 'sha256-iRj16yE8xkWL9B9w0oqfsjWCtdGvyjuGS5wJKWysEj0=' 'sha256-huzsYMh7mRCEr/7DO58wggfxjuHlKmGL4AqJI/1IZ1I=' 'sha256-J/jDPOahcY70bZC8Grs2w66XXLst1v8zjw+pLzgdpk4=' 'sha256-fkTFQ5vzkmo8Rphccx3AQxNa5rbMnmL7p+xu28NKKWA=' 'sha256-i0AqxifFs8gORE7M1enKOZYlgA+z8XMpt62opKL6lQQ=' 'sha256-Dt1GNoX5JNbKo/yxbNUqLJHHjVyNVhktIPObYNwOlAM=' 'sha256-xm6SNx6M4Cv+JTQsstZ1YBhgtcWGPIwF2Ie2CpmufaI=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' data: blob: https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com; frame-src 'self' blob: https://*.supabase.co https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-CUSmxudslmCKwQ/1LvnH+6VijoY5O8LrrMqCekxtbuk=' 'sha256-+WEpkYs90nbkKrhAzqJxSbZVT5+ltphHyzuGtb1vWG0=' 'sha256-uHcVkEW6GHwDPjKYsfrIy8UEu1fgT9rwKU6PdUSYajI=' 'sha256-lc0xAP+7GrHF1llKJ4eE4XTuPvVwIiXfru+mAM7Ia54=' 'sha256-Pb1x0j+Vauj225NeIzbAt7SPIC3ZMYkCYS/4K99ocPQ=' 'sha256-OerOrD4YYe+cjQms+V801oAsfMlqk8lBw1wC/eL+N3E=' 'sha256-kafOnZj2B74omdxg5TEis72e6Giy+f5kUE3rMz4qgfA=' 'sha256-D9F00C/JE7P55m+Xs06Df3/xnNSEA+lQRdfnKTPDWLw=' 'sha256-iRj16yE8xkWL9B9w0oqfsjWCtdGvyjuGS5wJKWysEj0=' 'sha256-huzsYMh7mRCEr/7DO58wggfxjuHlKmGL4AqJI/1IZ1I=' 'sha256-J/jDPOahcY70bZC8Grs2w66XXLst1v8zjw+pLzgdpk4=' 'sha256-fkTFQ5vzkmo8Rphccx3AQxNa5rbMnmL7p+xu28NKKWA=' 'sha256-W0WA+OuwLfpCgnTSg6hn/EN43jug87roPkHAdaMysPM=' 'sha256-Dt1GNoX5JNbKo/yxbNUqLJHHjVyNVhktIPObYNwOlAM=' 'sha256-xIU1cqlhu69J8SuINuOe8t6DOzSct1amEjfXlnfrUVM=' 'sha256-mYppoSrAi7ru655wgLe2vnGNXhpn7sqPeMXlV+tcWQk=' 'sha256-+dyREzTl78q/qA1nQgryBBXv3DDdqyXTbcGvknhyoCg=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' data: blob: https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com; frame-src 'self' blob: https://*.supabase.co https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>BDIH Project Tracker</title>
 <meta name="description" content="Botswana Innovation Hub project tracker for the BOCRA and UASF Trust websites">
@@ -777,12 +777,17 @@ blockquote { border-left: 0; background: var(--sunk); font-style: normal; border
 .g2r { grid-template-columns: minmax(0, 1fr) 340px; }
 .g2r td:first-child { min-width: 300px; }
 @media (max-width: 1200px) { .g2r { grid-template-columns: 1fr; } }
+/* Joint documents */
+.tbl.diff td { vertical-align: top; } .diff .d-added td:last-child { background: #e3f3e3; } .diff .d-changed td:last-child { background: #fff6d6; } .diff .d-removed td:nth-child(2) { background: #fbe4e2; text-decoration: line-through; }
+.cr-route.jr { margin: 8px 0 12px; }
 
 </style>
 </head>
 <body>
 <div id="app" aria-live="polite"></div>
 <noscript>This tool needs JavaScript.</noscript>
+
+
 
 
 
@@ -5161,7 +5166,7 @@ NAV.push(
 );
 
 /* ---------- Documents and the document bank on one page ---------- */
-const docTabs = on => tabs([['documents', 'Project documents', '#/documents'], ['bank', 'Document bank', '#/bank']], on);
+let docTabs = on => tabs([['documents', 'Project documents', '#/documents'], ['bank', 'Document bank', '#/bank']], on);
 const _docsView = VIEWS.documents, _bankView = VIEWS.bank;
 VIEWS.documents = (p, q) => docTabs('documents') + _docsView(p, q);
 VIEWS.bank = (p, q) => docTabs('bank') + _bankView(p, q);
@@ -5169,10 +5174,11 @@ VIEWS.bank = (p, q) => docTabs('bank') + _bankView(p, q);
 /* ---------- Reports and weekly reports on one page ---------- */
 const _reportsView = VIEWS.reports, _weeklyView = VIEWS.weekly;
 const reportTabs = on => tabs([['standard', 'Progress report', '#/reports?tab=standard'], ['weekly', 'Weekly reports', '#/weekly'], ['custom', 'Report builder', '#/reports?tab=custom'], ['saved', 'Saved reports', '#/reports?tab=saved']]
+  .concat(typeof can.steeringPack === 'function' && can.steeringPack(Ctx.u) ? [['steering', 'Steering Committee pack', '#/reports?tab=steering']] : [])
   .concat(isOversight(Ctx.u) ? [['downloads', 'Download log', '#/reports?tab=downloads']] : []), on);
 VIEWS.weekly = (p, q) => '<div class="page-h"><div><h1>Reports</h1></div></div>' + reportTabs('weekly')
   + _weeklyView(p, q).replace('<div class="page-h"><h1>Weekly developer reports</h1>', '<div class="page-h sub"><h2>Weekly developer reports</h2>');
-VIEWS.reports = (p, q) => _reportsView(p, q).replace(/<nav class="tabs" role="tablist">[\s\S]*?<\/nav>/, reportTabs(q.tab || 'standard'));
+VIEWS.reports = (p, q) => q.tab === 'steering' ? VIEWS.steering(p, q) : _reportsView(p, q).replace(/<nav class="tabs" role="tablist">[\s\S]*?<\/nav>/, reportTabs(q.tab || 'standard'));
 
 /* ---------- Dashboard: developers side by side ---------- */
 function devCompare() {
@@ -5366,7 +5372,16 @@ const RPT_EXTRA = `.rpt-top{border-bottom:2px solid #7b4a24;padding-bottom:8pt;m
 .rpt-foot .rpt-p{height:26pt;width:auto;margin-right:12pt}
 @media print{.rpt-foot{position:fixed;left:0;right:0;bottom:0;background:#fff}.rpt-space{height:42pt}
 .rpt-wm{position:fixed;top:50%;left:50%;width:120mm;transform:translate(-50%,-50%);opacity:.06;z-index:-1;pointer-events:none}.rpt-wm svg{width:100%;height:auto}}
-.rpt-shell{width:100%;border-collapse:collapse;margin:0}.rpt-shell>tbody>tr>td,.rpt-shell>tfoot>tr>td{border:0;padding:0}`;
+.rpt-shell{width:100%;border-collapse:collapse;margin:0}.rpt-shell>tbody>tr>td,.rpt-shell>tfoot>tr>td{border:0;padding:0}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+table:not(.rpt-shell){border-collapse:separate;border-spacing:0;border:0}
+table:not(.rpt-shell) tr>*:first-child{border-left:.75pt solid #000}
+table:not(.rpt-shell) th,table:not(.rpt-shell) td{border:0;border-right:.75pt solid #000;border-bottom:.75pt solid #000}
+table:not(.rpt-shell) thead th{border-top:.75pt solid #000}
+table:not(.rpt-shell):not(:has(thead)) tr:first-child>*{border-top:.75pt solid #000}
+table:not(.rpt-shell) thead{display:table-header-group}
+table:not(.rpt-shell) tr{break-inside:avoid;page-break-inside:avoid}
+h2,h3{break-after:avoid;page-break-after:avoid}`;
 function rptDownloadedBy() { const u = me(); return 'Downloaded by ' + (u ? u.fullName : 'unknown') + ' on ' + D.stamp(D.now()); }
 function rptFoot() { return `<div class="rpt-foot"><div>${bocraLogo('rpt-p')}${uasfLogo('rpt-p')}</div><p>${esc(rptDownloadedBy())}</p></div>`; }
 function rptTop(html) { return /rpt-head/.test(html) ? '' : `<div class="rpt-top">${bihLogo('rpt-logo')}</div>`; }
@@ -5609,6 +5624,398 @@ REG.risks.fields = REG.risks.fields.flatMap(f => f[0] === 'mitigation' ? [['cont
 
 </script>
 <script>
+/* js/steering.js */
+'use strict';
+/* Steering Committee pack: one document for the Project Leader and Project Officer to take to each
+   Steering Committee meeting. Built from the live plan, registers, queries, invoices and actions. */
+
+PERMISSIONS.push(['report.steering', 'Prepare the Steering Committee pack', ['ADMIN', 'BDIH_LEAD', 'BDIH_PO']]);
+can.steeringPack = u => hasPerm(u, 'report.steering');
+
+// Steering Committee meetings in the plan, earliest first
+const scMeetings = () => St().activities.filter(a => !a.deleted && a.type === 'Meeting' && /steering/i.test(a.name)).sort((a, b) => a._si - b._si);
+
+function steeringHTML(mtg) {
+  const S = St(), u = Ctx.u || me(), i = sdi(), cal = S._cal, ce = contractEnd(S);
+  const all = S.activities.filter(a => !a.deleted), w = weighted(all, i), p = perfStatus(w.actual, w.planned, S.settings);
+  const list = scMeetings(), k = list.indexOf(mtg), prev = k > 0 ? list[k - 1] : null, next = list[k + 1] || null;
+  const upto = mtg ? (next ? next._si : mtg._si + 30) : i + 20;
+  const T = (heads, rows, empty) => rows.length ? `<table><thead><tr>${heads.map(x => `<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c ?? ''}</td>`).join('')}</tr>`).join('')}</tbody></table>` : `<p><em>${empty || 'None.'}</em></p>`;
+  const sum = ws => { const st = wsStats(ws); return [esc(wsName(ws)), esc(orgName(S.workstreams.find(x => x.id === ws).owner)), st.status, pc(st.planned), pc(st.actual), st.spi == null ? 'n/a' : st.spi.toFixed(2), st.comm ? D.nice(st.comm.finish) : 'n/a', st.comm ? slipTxt(st.comm) : 'n/a']; };
+  const due = all.filter(a => !isDone(a) && (a.type === 'Milestone' || a.submittable) && a._fi <= upto).sort((a, b) => a._fi - b._fi);
+  const crs = S.changes.filter(c => crStage(c) === 'Steering Committee');
+  const crDone = S.changes.filter(c => ['Approved', 'Rejected'].includes(crStage(c)) && c.steeringDate && (!prev || c.steeringDate >= prev.start));
+  const qs = (S.queries || []).filter(q => q.status === 'Open' && q.level === 3);
+  const joints = (S.joints || []).filter(j => j.status === 'With Steering Committee');
+  const decs = S.decisions.filter(d => d.status === 'Required');
+  const risks = S.risks.filter(r => r.status !== 'Closed').sort((a, b) => b.likelihood * b.impact - a.likelihood * a.impact).slice(0, 10);
+  const issues = S.issues.filter(x => !['Resolved', 'Closed'].includes(x.status));
+  const acts = S.actions.filter(a => a.status === 'Open').sort((a, b) => a.due < b.due ? -1 : 1);
+  const inv = devWs().map(ws => { const xs = S.invoices.filter(x => x.ws === ws), t = f => money(xs.filter(f).reduce((s, x) => s + x.amount + x.vat, 0));
+    return [esc(wsName(ws)), t(x => ['Submitted', 'Under review', 'Queried'].includes(x.status)), t(x => x.status === 'Approved for payment'), t(x => x.status === 'Paid')]; });
+  const com = Ctx.com || defaultCommentary();
+  const para = t => esc(t || 'None.').split('\n').map(x => `<p>${x}</p>`).join('');
+  let n = 0; const H = t => `<h2>${++n}. ${t}</h2>`;
+  return `<div class="rpt-head"><div class="rpt-brand">${bihLogo('rpt-logo')}</div><div><h1>Steering Committee Pack</h1>
+   <p>${esc(brand().project)}</p>
+   <p>${mtg ? esc(mtg.name) + ', ' + D.nice(mtg.start) : 'Steering Committee meeting'}. Status date ${D.nice(cal.date(i))}. Prepared by ${esc(u.fullName)} on ${D.stamp(D.now())}.</p></div></div>
+  ${H('Agenda')}<ol><li>Opening and apologies</li><li>Minutes and actions from the previous meeting</li><li>Project position and progress by website</li><li>Milestones and deliverables due</li>
+   <li>Items for decision: change requests and documents</li><li>Escalated queries</li><li>Risks and issues</li><li>Invoices and payments</li><li>Any other business and date of the next meeting</li></ol>
+  ${H('Project position')}${T(['Measure', 'Value'], [['Overall status', p.status], ['Planned complete', pc(w.planned)], ['Actual complete', pc(w.actual)], ['Schedule performance', p.spi == null ? 'n/a' : p.spi.toFixed(2)], ['Contract end', D.nice(ce)], ['Next Steering Committee', next ? D.nice(next.start) : 'Not scheduled']])}
+  ${H('Progress by website')}${T(['Website', 'Developer', 'Status', 'Planned', 'Actual', 'SPI', 'Forecast commissioning', 'Against baseline'], devWs().map(sum))}
+  ${H('Milestones and deliverables due before the next meeting')}${T(['Item', 'Website', 'Due', 'Status', 'Health'], due.map(a => [esc(a.name), esc(wsName(a.ws)), D.nice(a.finish), esc(a.status), health(a, i)]), 'Nothing due.')}
+  ${H('Items for decision')}<h3>Change requests</h3>${T(['No', 'Change request', 'Raised by', 'Impact', 'BDIH recommendation', 'BOCRA position'], crs.map(c => [crNo(c), `<strong>${esc(c.title)}</strong><br>${esc(c.description)}`, esc(uname(c.requestedBy)) + ' (' + esc(crOrigin(c)) + ')', `Scope ${esc(c.impactScope || 'n/a')}<br>Time ${esc(c.impactTime || 'n/a')}<br>Cost ${esc(c.impactCost || 'n/a')}`, esc(c.recommendation || ''), esc(c.bocraPosition ? c.bocraPosition + ': ' + (c.bocraComment || '') : 'Not needed (raised by BOCRA)')]), 'No change requests waiting for the Steering Committee.')}
+   <h3>Documents for approval</h3>${T(['Document', 'Submitted by BDIH', 'BOCRA comment'], joints.map(j => [esc(j.title), D.nice((j.submittedAt || '').slice(0, 10)), esc(j.bocraComment || '')]), 'No documents waiting.')}
+   <h3>Other decisions required</h3>${T(['Decision', 'Needed by'], decs.map(d => [esc(d.decision), D.nice(d.date)]), 'None.')}
+   ${crDone.length ? `<h3>Decided since the last meeting</h3>${T(['No', 'Change request', 'Decision', 'Date'], crDone.map(c => [crNo(c), esc(c.title), esc(c.steering), D.nice(c.steeringDate)]))}` : ''}
+  ${H('Escalated queries (level 3)')}${T(['No', 'Query', 'Website', 'Raised by', 'Raised'], qs.map(q => ['Q-' + q.no, `<strong>${esc(q.subject)}</strong><br>${esc(q.details)}`, esc(wsName(q.ws)), esc(uname(q.by)), D.nice(q.at.slice(0, 10))]), 'No queries are with the Steering Committee.')}
+  ${H('Risks and issues')}<h3>Top risks</h3>${T(['Risk', 'Score', 'Owner', 'Controls', 'Further actions', 'Due'], risks.map(r => [esc(r.title), r.likelihood * r.impact, esc(uname(r.owner)), esc(r.controls || ''), esc(r.mitigation || ''), D.nice(r.due)]))}
+   <h3>Open issues</h3>${T(['Issue', 'Severity', 'Owner', 'Target'], issues.map(x => [esc(x.title), esc(x.severity), esc(uname(x.owner)), D.nice(x.target)]))}
+  ${H('Invoices and payments')}${T(['Website', 'With BOCRA', 'Approved for payment', 'Paid'], inv)}
+  ${H('Open actions')}${T(['Action', 'Owner', 'Due'], acts.map(a => [esc(a.text), esc(uname(a.owner)), D.nice(a.due)]), 'No open actions.')}
+  ${H('BDIH commentary and next steps')}<h3>Issues</h3>${para(com.issues)}<h3>Next steps</h3>${para(com.next)}`;
+}
+
+VIEWS.steering = (p, q) => {
+  const u = Ctx.u;
+  if (!can.steeringPack(u)) return '<div class="page-h"><h1>Reports</h1></div>' + reportTabs('steering') + '<p class="empty">Only the Project Leader and Project Officer prepare the Steering Committee pack.</p>';
+  const list = scMeetings(), i = sdi();
+  const sel_ = q.m ? list.find(a => a.id === q.m) : (list.find(a => a._fi >= i) || list[list.length - 1]);
+  return `<div class="page-h"><h1>Reports</h1></div>${reportTabs('steering')}
+  <section class="card"><div class="filters">
+   <label class="f inline"><span>Meeting</span>${sel('m', list.map(a => [a.id, a.name + ', ' + D.nice(a.start)]), sel_ ? sel_.id : '', 'data-change="qset" data-k="m"')}</label></div>
+   <div class="toolbar"><button class="btn" data-act="steeringPdf" data-id="${sel_ ? sel_.id : ''}">Download PDF</button><button class="btn ghost" data-act="steeringWord" data-id="${sel_ ? sel_.id : ''}">Download Word</button>
+    ${hasPerm(u, 'progress.any') && !RO() ? '<button class="btn ghost" data-act="commentaryModal">Edit BDIH commentary</button>' : ''}</div></section>
+  <article class="rpt paper">${steeringHTML(sel_)}</article>`;
+};
+const scName = a => 'Steering Committee Pack' + (a ? ' ' + a.name.replace(/^Steering Committee /, '') + ' ' + a.start : '');
+ACT.steeringPdf = el => { const a = actOf(el.dataset.id); audit('report.generate', 'report', null, null, { pack: 'steering', meeting: el.dataset.id }); Store.save(); printHTML(scName(a), steeringHTML(a)); };
+ACT.steeringWord = el => { const a = actOf(el.dataset.id); audit('report.generate', 'report', null, null, { pack: 'steering', meeting: el.dataset.id, format: 'word' }); Store.save(); dl(wordBlob(steeringHTML(a)), scName(a) + '.doc'); };
+
+</script>
+<script>
+/* js/joint.js */
+'use strict';
+/* Joint documents (for example the draft PID): BDIH uploads a draft that every developer can download.
+   Each developer edits it and uploads their own version; developers never see each other's versions.
+   BDIH consolidates: every developer's changes are compared with the BDIH draft, shown side by side,
+   and merged into one Word document. BDIH then submits it to BOCRA, and BOCRA sends it on to the
+   Steering Committee. */
+
+PERMISSIONS.push(['joint.manage', 'Run joint documents: upload drafts, consolidate and submit', ['ADMIN', 'BDIH_LEAD', 'BDIH_PO']]);
+can.jointManage = u => hasPerm(u, 'joint.manage');
+const J_STATUS = ['Open for input', 'Consolidated', 'With BOCRA', 'With Steering Committee', 'Approved'];
+
+/* ---------- Reading and writing Word files ---------- */
+
+// Paragraphs of a .docx (or lines of a .txt or .md file), with heading styles kept
+async function docParagraphs(buf, name) {
+  const ext = (name.split('.').pop() || '').toLowerCase();
+  if (ext === 'txt' || ext === 'md') return new TextDecoder().decode(buf).split(/\r?\n/).map(t => ({ text: t.trim(), head: /^#+\s/.test(t) })).filter(p => p.text);
+  if (ext !== 'docx') throw new Error(name + ': only Word (.docx) or text files can be compared.');
+  let read;
+  try { read = await unzipEntries(buf); } catch (e) { throw new Error(name + ' is not a readable Word document.'); }
+  const xml = await read('word/document.xml');
+  if (!xml) throw new Error(name + ' is not a readable Word document.');
+  const doc = new DOMParser().parseFromString(xml, 'application/xml'), W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+  const out = [];
+  [...doc.getElementsByTagNameNS(W, 'p')].forEach(p => {
+    let text = '';
+    p.querySelectorAll('*').forEach(n => {
+      if (n.namespaceURI !== W) return;
+      if (n.localName === 't') text += n.textContent;
+      else if (n.localName === 'tab') text += '\t';
+      else if (n.localName === 'br') text += ' ';
+    });
+    const st = p.getElementsByTagNameNS(W, 'pStyle')[0], style = st ? st.getAttributeNS(W, 'val') || st.getAttribute('w:val') || '' : '';
+    text = text.replace(/\s+/g, ' ').trim();
+    if (text) out.push({ text, head: /^(heading|title)/i.test(style) });
+  });
+  return out;
+}
+
+// A minimal .docx: paragraphs with optional bold, highlight, strike-through and colour
+function makeDocx(paras) {
+  const x = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const run = r => `<w:r><w:rPr>${r.b ? '<w:b/>' : ''}${r.i ? '<w:i/>' : ''}${r.sz ? `<w:sz w:val="${r.sz}"/>` : ''}${r.hl ? `<w:highlight w:val="${r.hl}"/>` : ''}${r.strike ? '<w:strike/>' : ''}${r.color ? `<w:color w:val="${r.color}"/>` : ''}</w:rPr><w:t xml:space="preserve">${x(r.t)}</w:t></w:r>`;
+  const body = paras.map(p => `<w:p>${p.map(run).join('')}</w:p>`).join('');
+  const files = [
+    ['[Content_Types].xml', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>'],
+    ['_rels/.rels', '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>'],
+    ['word/document.xml', `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${body}<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="567" w:footer="567" w:gutter="0"/></w:sectPr></w:body></w:document>`]
+  ];
+  return new Blob([zipStore(files)], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
+}
+// Uncompressed zip archive
+function zipStore(files) {
+  const crcT = zipStore.t || (zipStore.t = Array.from({ length: 256 }, (_, n) => { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; return c >>> 0; }));
+  const crc = b => { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = crcT[(c ^ b[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; };
+  const enc = new TextEncoder(), parts = [], cen = [];
+  let off = 0;
+  files.forEach(([name, text]) => {
+    const n = enc.encode(name), d = enc.encode(text), c = crc(d);
+    const h = new DataView(new ArrayBuffer(30));
+    [[0, 0x04034b50, 4], [4, 20, 2], [8, 0, 2], [14, c, 4], [18, d.length, 4], [22, d.length, 4], [26, n.length, 2]].forEach(([o, v, s]) => s === 4 ? h.setUint32(o, v, true) : h.setUint16(o, v, true));
+    parts.push(new Uint8Array(h.buffer), n, d);
+    const e = new DataView(new ArrayBuffer(46));
+    [[0, 0x02014b50, 4], [4, 20, 2], [6, 20, 2], [16, c, 4], [20, d.length, 4], [24, d.length, 4], [28, n.length, 2], [42, off, 4]].forEach(([o, v, s]) => s === 4 ? e.setUint32(o, v, true) : e.setUint16(o, v, true));
+    cen.push(new Uint8Array(e.buffer), n);
+    off += 30 + n.length + d.length;
+  });
+  const size = cen.reduce((t, b) => t + b.length, 0), end = new DataView(new ArrayBuffer(22));
+  [[0, 0x06054b50, 4], [8, files.length, 2], [10, files.length, 2], [12, size, 4], [16, off, 4]].forEach(([o, v, s]) => s === 4 ? end.setUint32(o, v, true) : end.setUint16(o, v, true));
+  const all = parts.concat(cen, [new Uint8Array(end.buffer)]), out = new Uint8Array(all.reduce((t, b) => t + b.length, 0));
+  let p = 0; all.forEach(b => { out.set(b, p); p += b.length; });
+  return out;
+}
+
+/* ---------- Comparing and merging ---------- */
+
+// Paragraph-level differences between the BDIH draft (a) and a developer's version (b)
+function paraDiff(a, b) {
+  const key = p => p.text.toLowerCase(), n = a.length, m = b.length;
+  const L = Array.from({ length: n + 1 }, () => new Uint32Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) L[i][j] = key(a[i]) === key(b[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const ops = [];
+  let i = 0, j = 0;
+  while (i < n || j < m) {
+    if (i < n && j < m && key(a[i]) === key(b[j])) { ops.push({ t: 'eq', a: i++, b: j++ }); }
+    else if (j < m && (i === n || L[i][j + 1] >= L[i + 1][j])) ops.push({ t: 'ins', b: j++ });
+    else ops.push({ t: 'del', a: i++ });
+  }
+  // A removed paragraph followed by an added one is a change to that paragraph
+  const out = [];
+  for (let k = 0; k < ops.length; k++) {
+    const o = ops[k], nx = ops[k + 1];
+    if (o.t === 'del' && nx && nx.t === 'ins') { out.push({ t: 'chg', a: o.a, b: nx.b }); k++; }
+    else if (o.t === 'ins' && nx && nx.t === 'del') { out.push({ t: 'chg', a: nx.a, b: o.b }); k++; } else out.push(o);
+  }
+  return out;
+}
+
+// Merge every developer's changes into the BDIH draft
+function consolidate(base, inputs) {
+  const after = new Map(), chg = new Map(), del = new Map(), stats = [];
+  const push = (m, k, v) => { if (!m.has(k)) m.set(k, []); m.get(k).push(v); };
+  inputs.forEach(inp => {
+    const ops = paraDiff(base, inp.paras), s = { who: inp.who, added: 0, changed: 0, removed: 0, list: [] };
+    let anchor = -1;
+    ops.forEach(o => {
+      if (o.t === 'eq') anchor = o.a;
+      else if (o.t === 'ins') { push(after, anchor, { who: inp.who, p: inp.paras[o.b] }); s.added++; s.list.push(['Added', '', inp.paras[o.b].text]); }
+      else if (o.t === 'chg') { anchor = o.a; push(chg, o.a, { who: inp.who, p: inp.paras[o.b] }); s.changed++; s.list.push(['Changed', base[o.a].text, inp.paras[o.b].text]); }
+      else { anchor = o.a; push(del, o.a, inp.who); s.removed++; s.list.push(['Removed', base[o.a].text, '']); }
+    });
+    stats.push(s);
+  });
+  const paras = [];
+  const plain = p => [{ t: p.text, b: p.head, sz: p.head ? 28 : 0 }];
+  const tag = (who, what) => ({ t: `[${what} by ${who}] `, b: true, color: '1F4E79' });
+  (after.get(-1) || []).forEach(x => paras.push([tag(x.who, 'Added'), { t: x.p.text, hl: 'green', b: x.p.head }]));
+  base.forEach((p, i) => {
+    const c = chg.get(i) || [], d = del.get(i) || [];
+    if (!c.length && !d.length) paras.push(plain(p));
+    else {
+      paras.push([{ t: '[BDIH draft] ', b: true, color: '7B4A24' }, { t: p.text, b: p.head, strike: d.length > 0 && !c.length }]);
+      c.forEach(x => paras.push([tag(x.who, 'Proposed change'), { t: x.p.text, hl: 'yellow', b: x.p.head }]));
+      d.forEach(who => paras.push([tag(who, 'Proposed removal'), { t: 'Remove the paragraph above.', i: true, color: 'A3221A' }]));
+    }
+    (after.get(i) || []).forEach(x => paras.push([tag(x.who, 'Added'), { t: x.p.text, hl: 'green', b: x.p.head }]));
+  });
+  const conflicts = [...chg.values()].filter(v => new Set(v.map(x => x.who)).size > 1).length;
+  return { paras, stats, conflicts };
+}
+
+/* ---------- Storage hooks (the live tracker replaces these) ---------- */
+
+const JIO = {
+  async bytes(d) {
+    const v = d.versions[d.versions.length - 1];
+    if (!v.data) throw new Error(v.name + ' has no stored content in this demo copy.');
+    return (await fetch(v.data)).arrayBuffer();
+  },
+  async save(file, meta) { const r = await readFile(file); if (r.error) throw new Error(r.error); return addFile(r, meta).id; },
+  async call(fn, args) { return JLOCAL[fn](args); },
+  done(msg) { closeModal(); commit(msg); }
+};
+
+/* ---------- Pages ---------- */
+
+const jDocs = j => {
+  const S = St(), u = Ctx.u || me();
+  const docs = S.documents.filter(d => !d.deleted && d.entityType === 'joint' && d.entityId === j.id && canSeeItem(u, d));
+  return { base: docs.find(d => d.id === j.baseDoc), merged: docs.find(d => d.id === j.consolidatedDoc), inputs: docs.filter(d => d.ws !== 'S') };
+};
+const jOpen = j => j.status === 'Open for input' && D.today() <= j.due;
+const dlBtn = (d, label) => d ? `<button class="btn sm ghost" data-act="download" data-id="${d.id}">${label || 'Download'}</button>` : '';
+
+VIEWS.joint = (p, q) => {
+  const u = Ctx.u, S = St();
+  if (!S.joints) S.joints = [];
+  const mgr = can.jointManage(u) && !RO(), dev = !isOversight(u);
+  const cards = S.joints.slice().sort((a, b) => a.at < b.at ? 1 : -1).map(j => {
+    const x = jDocs(j), open = jOpen(j), last = j.status === 'Open for input' && D.today() === j.due;
+    const head = `<div class="ph"><div><h2>${esc(j.title)}</h2><p class="small muted">${esc(j.description || '')}</p></div>${stb(j.status)}</div>
+      <p>BDIH draft: ${x.base ? `<strong>${esc(x.base.versions[x.base.versions.length - 1].name)}</strong> ${dlBtn(x.base)}` : '<em>not uploaded yet</em>'}
+      &nbsp; Developer input due: <strong>${D.nice(j.due)}</strong>${last ? ' <span class="timer over">Last day for input</span>' : ''}${j.status === 'Open for input' && D.today() > j.due ? ' <span class="timer over">Input closed</span>' : ''}</p>`;
+    if (dev) {
+      const mine = x.inputs[0], ws = (wsOf(u) || [])[0];
+      return `<section class="card">${head}
+        <p>Your version (${esc(wsName(ws))}): ${mine ? `<strong>${esc(mine.versions[mine.versions.length - 1].name)}</strong>, uploaded ${D.stamp(mine.versions[mine.versions.length - 1].at)} ${dlBtn(mine)}` : '<em>not uploaded yet</em>'}</p>
+        ${open && !RO() && x.base ? `<button class="btn" data-act="jointUpload" data-id="${j.id}">${mine ? 'Upload a new version' : 'Upload my version'}</button>` : ''}
+        <p class="small muted">Download the BDIH draft, add your information, and upload it here. Other developers cannot see your version.</p></section>`;
+    }
+    const rows = devWs().map(ws => { const d = x.inputs.find(y => y.ws === ws), v = d && d.versions[d.versions.length - 1];
+      return tr([esc(wsName(ws)), v ? esc(v.name) : '<span class="muted">Not uploaded</span>', v ? esc(uname(v.by)) + ', ' + D.stamp(v.at) : '', dlBtn(d)]); });
+    const btns = [];
+    if (mgr && j.status === 'Open for input' && x.base) btns.push(`<button class="btn" data-act="jointConsolidate" data-id="${j.id}">Consolidate</button>`);
+    if (mgr && j.status === 'Consolidated') btns.push(`<button class="btn" data-act="jointAdvance" data-id="${j.id}" data-a="submit">Submit to BOCRA</button><button class="btn ghost" data-act="jointConsolidate" data-id="${j.id}">Consolidate again</button><button class="btn ghost" data-act="jointAdvance" data-id="${j.id}" data-a="reopen">Reopen for input</button>`);
+    if (j.status === 'With BOCRA' && can.crDecide(u) && !RO()) btns.push(`<button class="btn" data-act="jointAdvance" data-id="${j.id}" data-a="forward">Send to Steering Committee</button><button class="btn ghost" data-act="jointAdvance" data-id="${j.id}" data-a="return">Return to BDIH</button>`);
+    if (j.status === 'With Steering Committee' && can.crSteering(u) && !RO()) btns.push(`<button class="btn" data-act="jointAdvance" data-id="${j.id}" data-a="approve">Record approval</button><button class="btn ghost" data-act="jointAdvance" data-id="${j.id}" data-a="return">Return to BDIH</button>`);
+    if (mgr && j.status === 'Open for input') btns.push(`<button class="btn ghost" data-act="jointBase" data-id="${j.id}">${x.base ? 'Replace BDIH draft' : 'Upload BDIH draft'}</button>`);
+    return `<section class="card">${head}
+      ${table(['Developer', 'Their version', 'Uploaded by', ''], rows)}
+      ${x.merged ? `<p>Consolidated document: <strong>${esc(x.merged.versions[x.merged.versions.length - 1].name)}</strong> ${dlBtn(x.merged)} <span class="small muted">${j.consolidatedAt ? 'by ' + esc(uname(j.consolidatedBy)) + ', ' + D.stamp(j.consolidatedAt) : ''}</span></p>` : ''}
+      ${j.bocraComment ? `<p><strong>BOCRA:</strong> ${esc(j.bocraComment)}</p>` : ''}${j.steeringText ? `<p><strong>Steering Committee:</strong> ${esc(j.steeringText)}</p>` : ''}
+      <ol class="cr-route jr">${J_STATUS.map(s => `<li class="${s === j.status ? 'now' : J_STATUS.indexOf(s) < J_STATUS.indexOf(j.status) ? 'done' : ''}">${esc(s)}</li>`).join('')}</ol>
+      <div class="btns">${btns.join('')}</div></section>`;
+  }).join('');
+  return `<div class="page-h"><h1>Documents</h1>${can.jointManage(u) && !RO() ? '<div class="actions"><button class="btn" data-act="jointNew">New joint document</button></div>' : ''}</div>${docTabs('joint')}
+   <p class="muted">BDIH uploads a draft (for example the PID). Each developer downloads it, adds their information and uploads their version; developers do not see each other's versions. BDIH then consolidates them into one document, submits it to BOCRA, and BOCRA sends it to the Steering Committee.</p>
+   ${cards || '<p class="empty">No joint documents yet.</p>'}`;
+};
+
+ACT.jointNew = () => modal('New joint document', `<form data-form="jointNew" class="fgrid">
+  ${fld('Title', inp('title', 'Project Initiation Document (PID)', 'text', 'required maxlength="200"'), 'span2')}
+  ${fld('What developers should add', ta('description', 'Add your website\'s scope, approach, team, schedule and risks to the relevant sections.', 'maxlength="2000"'), 'span2')}
+  ${fld('Last day for developer input', inp('due', D.add(D.today(), 7), 'date', 'required'))}
+  ${fld('BDIH draft (Word .docx)', '<input type="file" name="file" accept=".docx,.txt,.md" required>')}
+  <div class="span2"><button class="btn">Create and share with developers</button></div></form>`, true);
+ACT.jointBase = el => modal('BDIH draft', `<form data-form="jointBase" class="fgrid"><input type="hidden" name="id" value="${el.dataset.id}">
+  ${fld('BDIH draft (Word .docx)', '<input type="file" name="file" accept=".docx,.txt,.md" required>', 'span2')}<div class="span2"><button class="btn">Upload</button></div></form>`);
+ACT.jointUpload = el => modal('Upload your version', `<form data-form="jointUpload" class="fgrid"><input type="hidden" name="id" value="${el.dataset.id}">
+  ${fld('Your edited document (Word .docx)', '<input type="file" name="file" accept=".docx,.txt,.md" required>', 'span2')}
+  <p class="small muted span2">Upload the BDIH draft with your information added. Keep BDIH's text as it is where you have nothing to change, so your additions are picked up correctly.</p>
+  <div class="span2"><button class="btn">Upload</button></div></form>`);
+
+const jFile = fd => { const f = fd.get('file'); if (!f || !f.size) { toast('Choose a file.', 'err'); return null; } if (!/\.(docx|txt|md)$/i.test(f.name)) { toast('Upload a Word (.docx) file.', 'err'); return null; } return f; };
+FORM.jointNew = async fd => {
+  const f = jFile(fd); if (!f) return;
+  const title = String(fd.get('title') || '').trim(), due = fd.get('due');
+  if (!title || !due) return toast('Give a title and the last day for input.', 'err');
+  try {
+    const id = await JIO.call('create', { title, description: String(fd.get('description') || '').trim(), due });
+    const doc = await JIO.save(f, { entityType: 'joint', entityId: id, ws: 'S', visibleToDevs: true, title: title + ' (BDIH draft)', category: 'PID' });
+    await JIO.call('setDoc', { id, kind: 'base', doc });
+    JIO.done('Shared with the developers.');
+  } catch (e) { toast(e.message, 'err'); }
+};
+FORM.jointBase = async fd => {
+  const f = jFile(fd); if (!f) return;
+  const j = St().joints.find(x => x.id === fd.get('id'));
+  try {
+    const doc = await JIO.save(f, j.baseDoc ? { docId: j.baseDoc, comment: 'Replaced draft' } : { entityType: 'joint', entityId: j.id, ws: 'S', visibleToDevs: true, title: j.title + ' (BDIH draft)', category: 'PID' });
+    await JIO.call('setDoc', { id: j.id, kind: 'base', doc });
+    JIO.done('BDIH draft uploaded.');
+  } catch (e) { toast(e.message, 'err'); }
+};
+FORM.jointUpload = async fd => {
+  const f = jFile(fd); if (!f) return;
+  const u = me(), j = St().joints.find(x => x.id === fd.get('id')), ws = (wsOf(u) || [])[0];
+  if (!jOpen(j)) return toast('Input for this document has closed.', 'err');
+  if (!ws) return toast('Only developers upload their version here.', 'err');
+  const mine = jDocs(j).inputs.find(d => d.ws === ws);
+  try {
+    await JIO.save(f, mine ? { docId: mine.id, comment: 'New version' } : { entityType: 'joint', entityId: j.id, ws, visibleToDevs: false, title: j.title + ' (' + wsName(ws) + ')', category: 'PID' });
+    JIO.done('Your version is uploaded. BDIH will consolidate it with the others.');
+  } catch (e) { toast(e.message, 'err'); }
+};
+
+// Consolidate: read every version, show the differences, then save one merged Word document
+ACT.jointConsolidate = async el => {
+  const j = St().joints.find(x => x.id === el.dataset.id), x = jDocs(j);
+  if (!x.base) return toast('Upload the BDIH draft first.', 'err');
+  if (!x.inputs.length) return toast('No developer has uploaded a version yet.', 'err');
+  modal('Consolidating ' + j.title, '<p>Reading the BDIH draft and each developer\'s version...</p>');
+  try {
+    const name = d => d.versions[d.versions.length - 1].name;
+    const base = await docParagraphs(await JIO.bytes(x.base), name(x.base));
+    const inputs = [];
+    for (const d of x.inputs) inputs.push({ who: (orgName(St().workstreams.find(w => w.id === d.ws).owner) || 'Developer') + ', ' + wsName(d.ws), ws: d.ws, paras: await docParagraphs(await JIO.bytes(d), name(d)) });
+    const r = consolidate(base, inputs);
+    Ctx.jointMerge = { id: j.id, r };
+    const missing = devWs().filter(ws => !x.inputs.some(d => d.ws === ws)).map(wsName);
+    closeModal();
+    modal('Differences: ' + j.title, `${missing.length ? `<p class="alert">No version yet from: ${esc(missing.join(', '))}.</p>` : ''}
+      ${r.conflicts ? `<p class="alert">${r.conflicts} paragraph${r.conflicts === 1 ? ' was' : 's were'} changed by more than one developer. Both versions are kept in the consolidated document for BDIH to choose.</p>` : ''}
+      ${table(['Developer', 'Added', 'Changed', 'Removed'], r.stats.map(s => tr([esc(s.who), s.added, s.changed, s.removed])))}
+      ${r.stats.map(s => `<h3>${esc(s.who)}</h3>${s.list.length ? `<div class="tw"><table class="tbl diff"><thead><tr><th>Change</th><th>BDIH draft</th><th>Developer's version</th></tr></thead><tbody>${s.list.map(([t, a, b]) => `<tr class="d-${t.toLowerCase()}"><td>${t}</td><td>${esc(a)}</td><td>${esc(b)}</td></tr>`).join('')}</tbody></table></div>` : '<p class="muted">No changes to the BDIH draft.</p>'}`).join('')}
+      <p class="small muted">The consolidated document keeps the BDIH draft and marks each developer's additions in green, proposed changes in yellow and proposed removals in red, labelled with the developer's name.</p>
+      <div class="btns"><button class="btn" data-act="jointSaveMerge">Save consolidated document</button><button class="btn ghost" data-act="jointPreviewMerge">Download a copy only</button></div>`, true);
+  } catch (e) { closeModal(); toast(e.message, 'err'); }
+};
+const jMergeFile = () => {
+  const m = Ctx.jointMerge, j = St().joints.find(x => x.id === m.id);
+  const cover = [[{ t: 'Consolidated: ' + j.title, b: true, sz: 32 }], [{ t: 'Prepared by ' + me().fullName + ' on ' + D.stamp(D.now()) + '. Inputs from: ' + m.r.stats.map(s => s.who).join('; ') + '.', i: true }], [{ t: '' }]];
+  return new File([makeDocx(cover.concat(m.r.paras))], j.title.replace(/[^A-Za-z0-9 ()._-]+/g, '') + ' (consolidated).docx', { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
+};
+ACT.jointPreviewMerge = () => { const f = jMergeFile(); dl(f, f.name); };
+ACT.jointSaveMerge = async () => {
+  const m = Ctx.jointMerge, j = St().joints.find(x => x.id === m.id);
+  try {
+    const f = jMergeFile();
+    const doc = await JIO.save(f, j.consolidatedDoc ? { docId: j.consolidatedDoc, comment: 'Consolidated again' } : { entityType: 'joint', entityId: j.id, ws: 'S', visibleToDevs: false, title: 'Consolidated: ' + j.title, category: 'PID' });
+    await JIO.call('setDoc', { id: j.id, kind: 'consolidated', doc });
+    JIO.done('Consolidated document saved.');
+  } catch (e) { toast(e.message, 'err'); }
+};
+
+ACT.jointAdvance = el => {
+  const a = el.dataset.a, j = St().joints.find(x => x.id === el.dataset.id);
+  const t = { submit: 'Submit to BOCRA', forward: 'Send to the Steering Committee', return: 'Return to BDIH', approve: 'Record Steering Committee approval', reopen: 'Reopen for developer input' }[a];
+  modal(t + ': ' + j.title, `<form data-form="jointAdvance" class="fgrid"><input type="hidden" name="id" value="${j.id}"><input type="hidden" name="a" value="${a}">
+   ${a === 'approve' ? fld('Meeting date', inp('date', D.today(), 'date')) : ''}${a === 'reopen' ? fld('New last day for input', inp('due', D.add(D.today(), 3), 'date')) : ''}
+   ${fld(a === 'submit' ? 'Note to BOCRA (optional)' : 'Comment', ta('text', '', (a === 'return' || a === 'approve' ? 'required ' : '') + 'maxlength="5000"'), 'span2')}
+   <div class="span2"><button class="btn">${t}</button></div></form>`, true);
+};
+FORM.jointAdvance = async fd => {
+  try { await JIO.call('advance', { id: fd.get('id'), action: fd.get('a'), text: String(fd.get('text') || '').trim(), date: fd.get('date') || null, due: fd.get('due') || null }); JIO.done('Updated.'); }
+  catch (e) { toast(e.message, 'err'); }
+};
+
+/* ---------- Demo (browser-only) actions; the live tracker uses the database ---------- */
+const JLOCAL = {
+  create({ title, description, due }) {
+    const u = me(), S = St(); if (!can.jointManage(u)) throw new Error('Only the Project Leader and Project Officer start joint documents.');
+    if (!S.joints) S.joints = [];
+    const j = { id: uid('j'), title, description, due, status: 'Open for input', by: u.id, at: D.now(), baseDoc: null, consolidatedDoc: null };
+    S.joints.push(j);
+    notify(usersWith('DEV_LEAD', 'DEV_MEMBER'), 'Joint document', `${title}: add your input by ${D.nice(due)}`, { link: '#/joint' });
+    return j.id;
+  },
+  setDoc({ id, kind, doc }) {
+    const j = St().joints.find(x => x.id === id);
+    if (kind === 'base') j.baseDoc = doc;
+    else { j.consolidatedDoc = doc; j.status = 'Consolidated'; j.consolidatedAt = D.now(); j.consolidatedBy = me().id; }
+  },
+  advance({ id, action, text, date, due }) {
+    const u = me(), j = St().joints.find(x => x.id === id);
+    const need = (ok, s, msg) => { if (!ok || j.status !== s) throw new Error(msg); };
+    if (action === 'submit') { need(can.jointManage(u), 'Consolidated', 'Consolidate the document before submitting it.'); j.status = 'With BOCRA'; j.submittedAt = D.now(); notify(usersWith('BOCRA_REP'), 'Joint document', j.title + ' submitted to BOCRA', { link: '#/joint' }); }
+    else if (action === 'forward') { need(can.crDecide(u), 'With BOCRA', 'Only BOCRA sends this to the Steering Committee.'); j.status = 'With Steering Committee'; j.bocraComment = text; notify(usersWith('BDIH_LEAD', 'ADMIN'), 'Joint document', j.title + ' sent to the Steering Committee', { link: '#/joint' }); }
+    else if (action === 'return') { if (!((j.status === 'With BOCRA' && can.crDecide(u)) || (j.status === 'With Steering Committee' && can.crSteering(u)))) throw new Error('You cannot return this document.'); if (j.status === 'With BOCRA') j.bocraComment = text; else j.steeringText = text; j.status = 'Consolidated'; notify(usersWith('BDIH_LEAD', 'BDIH_PO'), 'Joint document', j.title + ' returned to BDIH', { link: '#/joint' }); }
+    else if (action === 'approve') { need(can.crSteering(u), 'With Steering Committee', 'Only the Steering Committee secretary records approval.'); j.status = 'Approved'; j.steeringText = text; j.steeringDate = date; }
+    else if (action === 'reopen') { need(can.jointManage(u), 'Consolidated', 'Only a consolidated document can be reopened.'); j.status = 'Open for input'; j.due = due || D.add(D.today(), 3); }
+  }
+};
+
+// Documents page gets a third tab
+const _docTabs = docTabs;
+docTabs = on => _docTabs(on).replace('</nav>', `<a href="#/joint" role="tab" aria-selected="${on === 'joint'}" class="${on === 'joint' ? 'on' : ''}">Joint documents</a></nav>`);
+(() => { const n = NAV.find(x => x.r === 'documents'); if (n) n.also = (n.also || []).concat('joint'); })();
+
+</script>
+<script>
 /* js/live.js */
 'use strict';
 /* Live mode: runs the tracker against Supabase.
@@ -5685,7 +6092,7 @@ REG.risks.fields = REG.risks.fields.flatMap(f => f[0] === 'mitigation' ? [['cont
     const s = seedState();
     ['users', 'resources', 'activities', 'links', 'baselines', 'history', 'submissions', 'reviews', 'documents', 'weekly', 'reports',
       'deliverables', 'risks', 'issues', 'decisions', 'changes', 'meetings', 'actions', 'comments', 'notifications', 'audit', 'requests',
-      'tickets', 'invoices', 'reportDefs', 'queries'].forEach(k => { s[k] = []; });
+      'tickets', 'invoices', 'reportDefs', 'queries', 'joints'].forEach(k => { s[k] = []; });
     s.flags = {}; s.labels = {}; s.roleNames = null; s.rolePerms = null;
     return s;
   }
@@ -5777,6 +6184,9 @@ REG.risks.fields = REG.risks.fields.flatMap(f => f[0] === 'mitigation' ? [['cont
     const qEv = BX.query_events || [];
     S.queries = (BX.queries || []).map(x => ({ id: x.id, no: x.query_no, ws: ws(x.workstream_id), subject: x.subject, details: x.details, by: x.raised_by, at: x.raised_at,
       level: x.level, status: x.status, due: x.due_date, events: qEv.filter(e => e.query_id === x.id).map(e => ({ at: e.at, by: e.by_id, kind: e.kind, level: e.level, body: e.body || '' })) }));
+    S.joints = (BX.joint_documents || []).map(j => ({ id: j.id, title: j.title, description: j.description || '', due: j.due_date, status: j.status, by: j.created_by, at: j.created_at,
+      baseDoc: j.base_document_id, consolidatedDoc: j.consolidated_document_id, consolidatedAt: j.consolidated_at, consolidatedBy: j.consolidated_by, submittedAt: j.submitted_at,
+      bocraComment: j.bocra_comment || '', steeringText: j.steering_text || '', steeringDate: j.steering_date }));
     S.meetings = meetings.map(m => ({ id: m.id, ws: ws(m.workstream_id), visibleToDevs: m.visible_to_developers, forum: m.forum, title: m.title, date: m.meeting_date,
       attendees: att.filter(a => a.meeting_id === m.id).map(a => a.user_id), agenda: m.agenda || '', decisions: m.decisions || '', minutesDoc: m.minutes_document_id }));
     S.actions = actions.map(a => ({ id: a.id, meetingId: a.meeting_id, ws: ws(a.workstream_id), visibleToDevs: a.visible_to_developers, text: a.description,
@@ -6088,6 +6498,13 @@ REG.risks.fields = REG.risks.fields.flatMap(f => f[0] === 'mitigation' ? [['cont
     return act(() => rpc('raise_query', { p_ws: wsId(fd.get('ws')), p_subject: subject, p_details: details }), 'Query raised.');
   };
   FORM.queryAct = fd => act(() => rpc('query_act', { p_query: fd.get('id'), p_action: fd.get('action'), p_body: String(fd.get('body') || '').trim() }), 'Query updated.');
+  // Joint documents: files go to storage, steps go through the database
+  JIO.bytes = async d => { const r = await signedUrl(d.id); const res = await fetch(r.url); if (!res.ok) throw new Error('Could not read ' + d.title + '.'); return res.arrayBuffer(); };
+  JIO.save = async (file, meta) => { busy(true); try { return await upload(file, meta); } finally { busy(false); } };
+  JIO.call = (fn, a) => fn === 'create' ? rpc('joint_create', { p_title: a.title, p_description: a.description || null, p_due: a.due })
+    : fn === 'setDoc' ? rpc('joint_set_doc', { p_joint: a.id, p_kind: a.kind, p_document: a.doc })
+    : rpc('joint_advance', { p_joint: a.id, p_action: a.action, p_text: a.text || null, p_date: a.date || null, p_due: a.due || null });
+  JIO.done = msg => { closeModal(); return reload(msg); };
   FORM.crAdvance = fd => act(() => rpc('cr_advance', { p_cr: fd.get('id'), p_outcome: fd.get('outcome') || '', p_text: String(fd.get('text') || '').trim(), p_date: fd.get('date') || null }), 'Change request updated.');
 
   /* ---------- Weekly reports, invoices, plan actions ---------- */
