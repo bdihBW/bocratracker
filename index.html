@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-CUSmxudslmCKwQ/1LvnH+6VijoY5O8LrrMqCekxtbuk=' 'sha256-+WEpkYs90nbkKrhAzqJxSbZVT5+ltphHyzuGtb1vWG0=' 'sha256-7NUJarqoVS8YGR9bs5kDlDfErzadmr1wQ8jn2YZEfS0=' 'sha256-lc0xAP+7GrHF1llKJ4eE4XTuPvVwIiXfru+mAM7Ia54=' 'sha256-H7DI3xw7B8qQ5xUa4RSuXxZu1HdYTLi4DSlYfY5N8nQ=' 'sha256-QF2RUdwhkbZFsolcX5Xw+oujXPybhKwfuB2X6j53GwI=' 'sha256-V2SCl8Z7w3aixpQvuP8nrWJNyKhfJRSQDHfVYTmj6DQ=' 'sha256-CAQvQvxFQpHBxG3EBcRF5Q0Ksq0d9jcraBBFelD0FZs=' 'sha256-yDOgO98mUsn3P1ni8fGaAO2tj7pBaxs+/V/GXBvhkV4=' 'sha256-o7PIdFM+qOId+5/kfmjCwFFiOLfmLga82z4G8iBwKfY=' 'sha256-ayQkkWXDOsw05k2DSl8oqEtuKzLCfhpbYRXEmWWnQq8=' 'sha256-+h1FGljmIPRARG0jVIvz5LikJEKpX/fg7BHz6Mm3JBI=' 'sha256-JUkcfDNQOPS5MndUDaydRxhh/1TNrXR7UMqQtABKcSg=' 'sha256-bjoeJl54JQ70KbOZmL2DevLxddSeRqWTghRxJOpAA+8=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' data: blob: https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com; frame-src 'self' blob: https://*.supabase.co https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-CUSmxudslmCKwQ/1LvnH+6VijoY5O8LrrMqCekxtbuk=' 'sha256-+WEpkYs90nbkKrhAzqJxSbZVT5+ltphHyzuGtb1vWG0=' 'sha256-7NUJarqoVS8YGR9bs5kDlDfErzadmr1wQ8jn2YZEfS0=' 'sha256-lc0xAP+7GrHF1llKJ4eE4XTuPvVwIiXfru+mAM7Ia54=' 'sha256-H7DI3xw7B8qQ5xUa4RSuXxZu1HdYTLi4DSlYfY5N8nQ=' 'sha256-QF2RUdwhkbZFsolcX5Xw+oujXPybhKwfuB2X6j53GwI=' 'sha256-GHZn/AmhK/sRYUfB+aH8b+peb4C5eGIZASfq6r38bbc=' 'sha256-CAQvQvxFQpHBxG3EBcRF5Q0Ksq0d9jcraBBFelD0FZs=' 'sha256-yDOgO98mUsn3P1ni8fGaAO2tj7pBaxs+/V/GXBvhkV4=' 'sha256-o7PIdFM+qOId+5/kfmjCwFFiOLfmLga82z4G8iBwKfY=' 'sha256-ayQkkWXDOsw05k2DSl8oqEtuKzLCfhpbYRXEmWWnQq8=' 'sha256-+h1FGljmIPRARG0jVIvz5LikJEKpX/fg7BHz6Mm3JBI=' 'sha256-JUkcfDNQOPS5MndUDaydRxhh/1TNrXR7UMqQtABKcSg=' 'sha256-bjoeJl54JQ70KbOZmL2DevLxddSeRqWTghRxJOpAA+8=' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' data: blob: https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com; frame-src 'self' blob: https://*.supabase.co https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>BDIH Project Tracker</title>
 <meta name="description" content="Botswana Innovation Hub project tracker for the BOCRA and UASF Trust websites">
@@ -712,8 +712,9 @@ blockquote { border-left: 0; background: var(--sunk); font-style: normal; border
 .page-h.sub h2 { margin: 0; font-size: 20px; }
 
 /* Sign-in: the BIH building */
-.login-art.photo { background-color: #2b2a26; background-size: cover; background-position: center; border-right: 0; padding: 0; }
-@media (max-width: 860px) { .login-art.photo { display: block; min-height: 180px; } }
+.login-art.photo { background: var(--sunk); border-right: 1px solid var(--rule); padding: 48px; display: flex; align-items: center; justify-content: center; }
+.login-art.photo img { display: block; width: 100%; max-width: 738px; height: auto; border-radius: 6px; }
+@media (max-width: 860px) { .login-art.photo { display: flex; padding: 16px; border-right: 0; border-bottom: 1px solid var(--rule); } .login-art.photo img { max-width: 480px; } }
 
 /* Change password: a small centred card */
 .pw-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; background: var(--sunk); }
@@ -1704,7 +1705,7 @@ function shell(route, body) {
 function loginView(msg) {
   const demo = St().users.filter(u => u.active).map(u => `<tr><td><button type="button" class="link" data-act="fillLogin" data-u="${esc(u.username)}">${esc(u.username)}</button></td><td>${esc(roleLabel(u))}</td><td>${esc(orgName(u.org).replace('Botswana Communications Regulatory Authority', 'BOCRA').replace('Botswana Digital and Innovation Hub', 'BDIH'))}</td></tr>`).join('');
   return `<div class="login-wrap">
-  <section class="login-art photo" aria-hidden="true" style="background-image:url('${typeof LOGIN_PHOTO === 'string' ? LOGIN_PHOTO : ''}')"></section>
+  <section class="login-art photo" aria-hidden="true">${typeof LOGIN_PHOTO === 'string' ? `<img src="${LOGIN_PHOTO}" alt="" width="738" height="363">` : ''}</section>
   <div class="login-card">
    ${bihLogo('login-logo')}
    <h2 class="login-h">Sign in to the ${esc(brand().app)}</h2>
